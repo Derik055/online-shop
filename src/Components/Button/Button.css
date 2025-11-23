@@ -1,0 +1,21 @@
+.Button {
+  padding: 16px 32px;
+  background-color: #F8F9FB;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.Button:hover {
+  background-color: #0A1D37;
+}
+.ButtonText {
+  color: #0A1D37;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+.Button:hover .ButtonText {
+  color: #F8F9FB;
+}
