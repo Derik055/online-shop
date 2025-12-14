@@ -1,0 +1,22 @@
+.Header {
+    padding: 8px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Page{
+    font-family: "Montserrat", "sans-serif";
+    font-size: 32px;
+    font-weight: bold;
+}
+.SortAndMenu{
+    display: flex;
+    gap: 8px;
+}
+.Sort{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 18px;
+}

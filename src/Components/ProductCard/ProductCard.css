@@ -1,0 +1,17 @@
+.Product {
+  display: flex;
+  flex-direction: column;
+}
+
+.pr-img img {
+  width: 416px;
+  height: 416px;
+  object-fit: cover;
+  display: block;
+}
+
+.Pr-desc {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  margin-top: 16px;
+}

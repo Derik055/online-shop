@@ -1,0 +1,25 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.product img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.product .price {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.product .title {
+font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0px;
+}

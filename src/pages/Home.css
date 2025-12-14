@@ -59,6 +59,29 @@
 
 .category-images{
     display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    height: 921px;
+}
+
+.new-arrivals h1{
+    font-family: "Montserrat",sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 72px;
+    margin-bottom: 48px;
+}
+
+.new-arrivals{
+    align-items: center;
+}
+
+.NewArrivalsImgs{
+    display: flex;
     padding: 0 100px;
     max-width: 100%;
     box-sizing: border-box;
@@ -66,72 +89,5 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    height: 921px;
+    height: 480px;
 }
-
-.lifestyleImage img{
-    width: 566px;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.lifestyleoverlay {
-  padding: 0 100px;
-  position: absolute;
-  top: 768px;
-  left: 24px;
-  max-width: 102px; 
-}
-
-.lifestyle-header{
-    font-family: "Nunito Sans",sans-serif;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 24px;
-}
-
-.footballimage img{
-    width: 566px;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.footballoverlay {
-  padding: 0 686px;
-  position: absolute;
-  top: 768px;
-  left: 24px;
-  max-width: 102px; 
-}
-
-.football-header{
-    font-family: "Nunito Sans",sans-serif;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 24px;
-}
-
-.basketballimage img{
-    width: 566px;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.basketballoverlay {
-  padding: 0 1272px;
-  position: absolute;
-  top: 768px;
-  left: 24px;
-  max-width: 102px; 
-}
-
-.basketball-header{
-    font-family: "Nunito Sans",sans-serif;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 24px;
-}
-

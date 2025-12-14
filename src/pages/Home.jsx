@@ -4,7 +4,17 @@ import HeroImage from "../assets/images/hero-image.jpg"
 import LifestyleImage from "../assets/images/lifestyleImg.jpg"
 import FootballImage from "../assets/images/Footballimg.jpg"
 import BasketballImage from "../assets/images/basketballimg.jpg"
-import Button from "../Components/Button/Button";
+import Predators from "../assets/images/Preds.jpg"
+import NikeTech from "../assets/images/NikeTech.jpg"
+import AdidasShirt from "../assets/images/AdidasTshirt.jpg"
+import PumaShirt from "../assets/images/PumaTshirt.jpg"
+import Button from "../Components/Button/Button"
+import CategoryCard from "../Components/CategoryCard/CategoryCard"
+import ProductCard from "../Components/ProductCard/ProductCard"
+import Newsletter from "../Components/Newsletter/Newsletter"
+import { Link } from "react-router-dom"
+
+
 
 function Home() {
   return (
@@ -22,8 +32,8 @@ function Home() {
             </p>
         </div>
         <div className="buttons">
-            <Button text=" Shop Men"/>
-            <Button text=" Shop Women"/>
+            <Button text=" Shop Men" to="/men"/>
+            <Button text=" Shop Women" to="/women"/>
         </div>
      </div>
     </div>
@@ -33,44 +43,51 @@ function Home() {
         <h1>Shop By Category</h1>
       </div>
       <div className="category-images">
-        <div className="lifestyle">
-            <div className="lifestyleImage">
-              <img src={LifestyleImage}/>
-              <div className="lifestyleoverlay">
-                <Button text="Shop"/>
-              </div>
-              <div className="lifestyle-header">
-                Lifestyle
-              </div>
-            </div>
-        </div>
+        <CategoryCard
+          title="Lifestyle"
+          image={LifestyleImage}
+          link="/lifestyle"
+        />
 
-        <div className="football">
-          <div className="footballimage">
-              <img src={FootballImage}/>
-          <div className="footballoverlay">
-                <Button text="Shop"/>
-              </div>
-              <div className="football-header">
-                Football
-              </div>
-            </div>
-        </div>
+        <CategoryCard
+          title="Football"
+          image={FootballImage}
+          link="/football"
+        />
 
-        <div className="basketball">
-          <div className="basketballimage">
-              <img src={BasketballImage}/>
-          <div className="basketballoverlay">
-                <Button text="Shop"/>
-              </div>
-              <div className="basketball-header">
-                Basketball
-              </div>
-            </div>
-        </div>
-
-      </div>
+        <CategoryCard
+           title="Basketball"
+          image={BasketballImage}
+          link="/basketball"
+        />
+       </div>
     </section>
+
+    <section className="new-arrivals">
+  <div className="arrivals-header">
+    <h1>New Arrivals</h1>
+  </div>
+
+  <div className="NewArrivalsImgs">
+    <ProductCard
+      image={Predators}
+      title="Adidas Predator Elite"
+    />
+    <ProductCard
+      image={NikeTech}
+      title="Nike Tech Fleece"
+    />
+    <ProductCard
+      image={AdidasShirt}
+      title="Adidas Originals Teamgeist T-shirt"
+    />
+    <ProductCard
+      image={PumaShirt}
+      title="Puma Training Shirt"
+    />
+  </div>
+</section>
+    <Newsletter />
     </>
   )
 }

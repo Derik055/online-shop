@@ -1,0 +1,6 @@
+.Product-grid{
+    padding: 32px 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}

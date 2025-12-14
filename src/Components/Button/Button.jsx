@@ -1,11 +1,21 @@
-import "./Button.css"
+import { Link } from "react-router-dom";
+import "./Button.css";
 
-function Button({text}){
+function Button({ text, to, onClick, type = "button" }) {
+  if (to) {
     return (
-        <button className="Button">
-            <span className="ButtonText">{text}</span>
-            </button>
-    )
+      <Link to={to} className="Button">
+        <span className="ButtonText">{text}</span>
+      </Link>
+    );
+  }
+
+
+  return (
+    <button className="Button" type={type} onClick={onClick}>
+      <span className="ButtonText">{text}</span>
+    </button>
+  );
 }
 
-export default Button
+export default Button;
